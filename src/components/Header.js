@@ -31,7 +31,7 @@ function Header(){
                     <span>SERIES</span>
                 </a>
             </NavMenu>
-            <UserImg src="/images/me.jpg"/>
+            <Login>Login</Login>
         </Nav>
     )
 }
@@ -93,9 +93,20 @@ const NavMenu = styled.div`
     }
 }
 `
-const UserImg = styled.img`
-    width : 48px;
-    height : 48px;
-    border-radius : 50%;
+const Login = styled.div`
+    border : 1px solid #f9f9f9;
+    padding: 8px 16px;
     cursor : pointer;
+    border-radius: 4px;
+    letter-spacing : 1.5px;
+    text-transformation : uppercase;
+    background-color: white;
+    color: black;
+    transition : all 0.2s ease 0s;
+
+    &:hover{
+        background-color: black;
+        color: white
+    }
+    
 `

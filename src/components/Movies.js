@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function Movies(){
     return(
@@ -7,7 +8,9 @@ function Movies(){
             <h4>Recommended for you</h4>
             <Content>
                 <Wrap>
+                    <Link to = {'/detail'}>
                     <img src="https://www.teahub.io/photos/full/104-1046174_batman-v-superman-first-poster.jpg" alt=""/>
+                    </Link>
                 </Wrap>
                 <Wrap>
                     <img src="https://everydayshouldbetuesday.files.wordpress.com/2021/07/captain-america-winter-soldier-poster.jpeg" alt=""/>

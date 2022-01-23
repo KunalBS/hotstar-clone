@@ -3,8 +3,17 @@ import styled from 'styled-components';
 import ImgSlider from "./ImgSlider";
 import Movies from "./Movies";
 import Viewers from "./Viewers";
+// import { db } from '../Firebase';
+
 
 function Home(){
+
+    // useEffect (()=>{
+    //     db.collection("movies").onSnapshot((snapshot)=>{
+    //         console.log(snapshot);
+    //     })
+    // },[])
+
     return(
         <Container>
            <ImgSlider/>
